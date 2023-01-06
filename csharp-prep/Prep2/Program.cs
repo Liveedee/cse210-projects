@@ -55,7 +55,6 @@ class Program
     if (percentage < 60)
     grade = "F";
 
-
     Console.WriteLine($"Your letter grade is: {grade}"); 
 
     if (percentage >= 60)
