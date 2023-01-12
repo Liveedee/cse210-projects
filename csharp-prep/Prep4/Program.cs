@@ -16,13 +16,13 @@ class Program
             numbers.Add(number); 
             add = Console.ReadLine();
             sum = int.Parse(add);
-            Console.WriteLine($"The Sum is: {sum + number}");
+      
             // Console.WriteLine(numbers.Count);
        
             
         }
         while (number != 0);
-
+            Console.WriteLine($"The Sum is: {sum + number}");
         
     }
 }
