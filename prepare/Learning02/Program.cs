@@ -1,21 +1,15 @@
-using System;
-
-
 public class Program
+
 {
-
-    static void Main(string[] args)
-    {}
-    public string _company = "";
-    public string _jobTitle = "";
-    public int _startYear = 0;
-    public int _endYear = 0;
-
-
-    public void SeeAll()
+static void Main(string[] args)
     {
-        Console.WriteLine($"{_company}");
-    }
+    Job job1 = new Job();
+    job1._company = "Microsoft";
+    job1._jobTitle = "Software Engineer";
+    job1._startYear = 1990;
+    job1._endYear = 2002;
+    job1.SeeAll();
     
+}
+}
 
-    }
