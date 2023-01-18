@@ -17,14 +17,14 @@ static void Main(string[] args)
     job2._startYear = 2022;
     job2._endYear = 2023;
     job2.DisplayJobDetails();
+    
+    Resume currentResume = new Resume();
+    currentResume.Jobs.Add(job1);
+    currentResume.Jobs.Add(job2);
 
-    Resume resume = new Resume();
-    Resume.Job.Add(job1);
-    Resume.Job.Add(job2);
+    currentResume._person = "Alison Rose";
 
-    Resume._person = "Alison Rose";
-
-    Resume.DisplayAllInfo()
+    currentResume.DisplayAllInfo();
     
     
 
