@@ -24,8 +24,7 @@ static void Main(string[] args)
 
     currentResume._person = "Alison Rose";
 
-    currentResume.DisplayAllInfo();
-    
+    Console.WriteLine(currentResume.Jobs[0]._jobTitle);    
     
 
 
