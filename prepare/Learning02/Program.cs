@@ -22,7 +22,7 @@ static void Main(string[] args)
     currentResume.Jobs.Add(job1);
     currentResume.Jobs.Add(job2);
 
-    currentResume._person = "Alison Rose";
+    currentResume._person = "Allison Rose";
 
     currentResume.DisplayJobDetails();
     
