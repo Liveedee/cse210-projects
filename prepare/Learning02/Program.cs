@@ -18,6 +18,17 @@ static void Main(string[] args)
     job2._endYear = 2023;
     job2.DisplayJobDetails();
 
+    Resume resume = new Resume();
+    Resume.Job.Add(job1);
+    Resume.Job.Add(job2);
+
+    Resume._person = "Alison Rose";
+
+    Resume.DisplayAllInfo()
+    
+    
+
+
 }
 }
 

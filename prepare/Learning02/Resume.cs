@@ -1,7 +1,15 @@
 using System;
 
 public class Resume
-{
-    public string _person = "Alison Rose";
-    List<string> Jobs = new List<string>();
+{   
+    List<Job> Jobs = new List<Job>();
+    public string _person;
+
+    public void DisplayAllInfo()
+    {
+
+    Console.Write($"Name: {_person}");
+    Console.Write("Jobs: ");
+   
+    }
 }   
