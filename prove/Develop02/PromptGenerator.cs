@@ -12,7 +12,7 @@ public class PromptGenerator
     {
         foreach (Entry entry in Entries)
         {
-        Console.WriteLine(Entries);
+        entry.ShowMainOption();
         }
     
 }
