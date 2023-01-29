@@ -3,6 +3,8 @@ using System;
 public class Journal
 {
     public List<string> _Entries = new List <string>();
+    public string entry;
+    public int choice;
 
     public Journal()
     {    
@@ -13,17 +15,23 @@ public class Journal
     _Entries.Add($"{4}. Save");
     _Entries.Add($"{5}. Quit");
 
-    
+    int i = 0;
+    while (choice != 5)
     
     foreach (string entry in _Entries)
     {
     Console.WriteLine($"{entry}");
-         int choice = int.Parse(Console.ReadLine()); 
-            if (choice == 1);
-               Console.WriteLine("Hey!");
-  
     }
+    {    
+    int choice = int.Parse(Console.ReadLine()); 
+    i++;
     
+ 
+    }
+
+        
+    
+
 
       
     // public AddEntry()
