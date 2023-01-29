@@ -18,13 +18,13 @@ public class Journal
     foreach (string entry in _Entries)
     {
     Console.WriteLine($"{entry}");
- 
+         int choice = int.Parse(Console.ReadLine()); 
+            if (choice == 1);
+               Console.WriteLine("Hey!");
   
     }
     
-        int choice = int.Parse(Console.ReadLine()); 
-            if (choice == 1);
-               
+
       
     // public AddEntry()
 

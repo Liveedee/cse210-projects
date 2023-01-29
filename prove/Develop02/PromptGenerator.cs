@@ -18,10 +18,13 @@ public class PromptGenerator
     }
     public NewRandomPrompt()
         {
-            Random randomPrompt = new Random();
-            string _promptsList = randomPrompt.Next();
-            Console.WriteLine(_promptsList);
+        Random randomPrompt = new Random();
+        int _promptsList = randomPrompt.Next(0,10);
+
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine(i);
         }
-    
-// }
+     
+
 }
