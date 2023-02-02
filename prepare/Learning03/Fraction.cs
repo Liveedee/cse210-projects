@@ -13,8 +13,29 @@ public class Fraction
         _bottom = 1;
     }
 
-    public Fraction()
+    public Fraction(int number)
+    {
+        _top = number;
+        _bottom = 1;
 
+    }
+
+    public Fraction(int topDenominator,int bottomDenominator)
+    {
+        _top = topDenominator;
+        _bottom = bottomDenominator;
+    }
+
+    public string NewFraction()
+    {
+        string text = $"{_top} / {_bottom}";
+        return text;
+    }
+
+    public float NewDecimal()
+    {
+        return(float)_top / (float) _bottom;
+    }
 
 
 }
