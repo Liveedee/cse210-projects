@@ -3,7 +3,12 @@ using System;
 class Program
 {
     static void Main(string[] args)
-    {
-        Console.WriteLine("Hello Develop03 World!");
+    {    
+    Reference myReference = new Reference();
+    myReference.ShowReference();
+    Scripture myScripture = new Scripture();
+    myScripture.ShowScripture();
+
+    
     }
 }
