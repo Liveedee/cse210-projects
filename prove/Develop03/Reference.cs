@@ -3,7 +3,7 @@ public class Reference
 
 {
 
-public string _reference = "\nProverbs 3:5-6";
+private string _reference = "\nProverbs 3:5-6";
 
 public Reference()
 {    

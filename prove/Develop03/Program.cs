@@ -8,7 +8,8 @@ class Program
     myReference.ShowReference();
     Scripture myScripture = new Scripture();
     myScripture.ShowScripture();
-
-    
+    Word myWord = new Word();
+    myWord.ShowUser();
     }
+
 }
