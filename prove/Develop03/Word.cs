@@ -1,37 +1,45 @@
 // HIDETHEWORD
 using System;
-using System.Collections.Generic;
+
 public class Word
 {
-    
-    private string user = "Press enter to continue or type 'quit' to end the program.";
-    private string _scriptureString = "Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknowledge him, and he shall direct thy paths.";
 
+    private string word;
+    private bool hidden;
 
-
-
-    private string thankUser = "Thank you for using the Scripture Memorizer!";
-    public Word()
-    {        
-    }
-
-    public void ShowUser()
+    public Word(string word)
     {
-        Console.WriteLine($"\n{user}");
-        string userChoice = Console.ReadLine();
-        
-        if (userChoice != "quit")
-        {
-            int i = 0;
-            foreach (char word in _scriptureString);
-            Console.WriteLine($"{_scriptureString.Replace($"{_scriptureString[i]}","_")}");
-            i++;
-        
-    
-
-        if (userChoice == "quit")
-    
-        Console.WriteLine($"{thankUser}");
+        this.word = word;
+        hidden = false;       
     }
-}
+
+    public void setHidden(bool hidden)
+    {
+        this.hidden = hidden;
+
+    }
+    
+    public bool getHidden()
+    {
+      return hidden;   
+    }
+
+    public void displayWord()
+    {
+        if (hidden == true)
+        {
+            foreach (char letter in word)
+            {
+                Console.Write("_");
+            }
+        }
+        else
+        {
+            Console.Write(word);
+        }
+    }
+// hide 
+// show
+// constructor (string)
+
 }
