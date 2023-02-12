@@ -3,17 +3,35 @@ using System;
 class Program
 {
     static void Main(string[] args)
-    {    
-        string scriptureVerse = "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.";
+    {   
+      
+        string scriptureVerse = "\nTrust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.";
         Reference myReference = new Reference();
         Scripture myScripture = new Scripture(myReference, scriptureVerse);
+     
+        myScripture.wordList[0].getHidden();
+        
+        Console.WriteLine(scriptureVerse);
+
+        Console.WriteLine("\nDo you want to continue or 'quit'?");
+            string userInput = Console.ReadLine();  
+        
+
+        int i = 0;
+        while(userInput == "")
+        { 
+                myScripture.wordList[i].displayWord();
+                i++;
+  
+        }
+    }
         // myScripture.ShowScripture();
 
         //myScripture.*Word List*.*Word Object*.*Word Methods*()
-        myScripture.wordList[0].setHidden(scriptureVerse);
-        myScripture.wordList[0].getHidden();
-        myScripture.wordList[0].displayWord();
+  
+  
         //myScripture.*Word List*[*random index*].*Word Methods*()
+        
 
 
         //WHILE Set up a while loop to run until the user enters quit or until all the words are hidden. Best to just use a while(true) loop with break points
@@ -26,6 +44,3 @@ class Program
             // IF - prompt the user to type quit to end the program or press enter to continue.
             // clear the console screen.
 
-    }
-
-}

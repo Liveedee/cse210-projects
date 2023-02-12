@@ -16,7 +16,13 @@ public class Word
     public void setHidden(bool hidden)
     {
         this.hidden = hidden;
+        
 
+        // for (string i = 0; i < word.Count; i++)
+        //     {
+        //         Console.WriteLine(word[i]);
+        //     }
+    
     }
     
     public bool getHidden()
