@@ -4,8 +4,8 @@ class Assignment
 
 {
 
-    private string _studentName = "";
-    private string _topic = "";
+    private string _studentName = "Samuel Bennett"; 
+    private string _topic = "Multiplication";
 
     public string GetName()
     {
@@ -25,7 +25,7 @@ class Assignment
     }
     public string GetSummary()
     {
-        return _studentName + _topic;
+        return _studentName +  "--" + _topic;
  
   
     }
