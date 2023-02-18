@@ -7,7 +7,7 @@ public class MathAssignment : Assignment
 
     public MathAssignment(string studentName, string topic, string textbookSection, string problems) : base(studentName,topic)
     {
-        _textbookSection = _textbookSection;
+        _textbookSection = textbookSection;
         _problems = problems;
     }
 
