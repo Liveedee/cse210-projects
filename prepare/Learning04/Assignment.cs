@@ -1,12 +1,17 @@
 using System;
 
-class Assignment
+public class Assignment
 
 {
 
-    private string _studentName = "Samuel Bennett"; 
-    private string _topic = "Multiplication";
+    private string _studentName; 
+    private string _topic;
 
+    public Assignment(string studentName, string topic)
+    {
+        _studentName = studentName;
+        _topic = topic;
+    }
     public string GetName()
     {
         return _studentName;

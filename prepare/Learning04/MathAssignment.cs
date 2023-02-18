@@ -2,10 +2,10 @@ using System;
 
 public class MathAssignment : Assignment
 {
-    private string _textbookSection = "7.3";
-    private string _problems = "8-9";
+    private string _textbookSection;
+    private string _problems;
 
-    public MathAssignment(string _studentName, string _topic, string _textbookSection, string _problems) : base(studentName,topic)
+    public MathAssignment(string studentName, string topic, string textbookSection, string problems) : base(studentName,topic)
     {
         _textbookSection = _textbookSection;
         _problems = problems;
