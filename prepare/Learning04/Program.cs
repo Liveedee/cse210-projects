@@ -10,5 +10,11 @@ class Program
         MathAssignment mathAssignment1 = new MathAssignment("Robert Rodriguez", "Fractions", "7.3", "8-19");
         Console.WriteLine(mathAssignment1.GetSummary());
         Console.WriteLine(mathAssignment1.GetHomeWorkList());
+    
+        WritingAssignment writingAssignment1 = new WritingAssignment("Mary Waters", "European History","The Causes of World War II by Mary Waters"); 
+        Console.WriteLine(writingAssignment1.GetSummary());
+        Console.WriteLine(writingAssignment1.GetHomeWorkList());
+        Console.WriteLine(writingAssignment1.GetWritingInfo());
+    
     }
 }
