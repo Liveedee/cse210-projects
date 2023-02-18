@@ -6,5 +6,6 @@ class Program
     {
         Assignment assignment1 = new Assignment();
         Console.WriteLine(assignment1.GetSummary());
+        Console.WriteLine(MathAssignment.GetHomeWorkList());
     }
 }
