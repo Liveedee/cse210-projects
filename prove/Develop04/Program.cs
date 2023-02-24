@@ -5,9 +5,14 @@ class Program
     static void Main(string[] args)
     {
         Activity activity1 = new Activity();
-        Console.WriteLine(activity1.DisplayWelcome());
-            string userInput = Console.ReadLine();
-            if (userInput == "1")
-                Console.WriteLine("start breathing activity");
-    }
+
+        string userInput = Console.ReadLine();
+        BreathingActivity breathingActivity1 = new BreathingActivity();
+        if (userInput == "1")
+        {
+            Console.WriteLine(breathingActivity1.ShowBreathingMessage());
+
+       
+        }
+}
 }
