@@ -2,39 +2,34 @@ using System;
 
     public class Activity
 {
-    public List<string> _Activities = new List<string>();
-
-
-
-
-    public Activity()
-    {
-        _Activities.Add($"{1}. The Breathing Activity");
-        _Activities.Add($"{2}. The Reflecting Activity");
-        _Activities.Add($"{3}. The Listening Activity");
-        _Activities.Add($"{4}. Quit The Program");
-
+    // private string _startMessage;
+    // private string _endMessage;
+    protected int _duration;
 
         
-    int i = 0;
-    i++;
-    foreach (string activity in _Activities)
-    {
-        Console.WriteLine($"{activity}");
-    }   
+
         
+    public void DurationActivity(int duration)
+    {
+        _duration = duration;
     }
+
+    // public DoAnimation();
+    // {
+        
+    // }
+    
         // if (choice == 2)
 
         // }
 
 
-    // public string GetUserTime()
+    public string GetUserTime()
 
-    // {
-    //     Console.WriteLine("How long, in seconds, would you like for your session?");
-    //     string timeChoice = Console.ReadLine();
-    // }
+    {
+       return "How long, in seconds, would you like for your session?";
+     
+    }
 
 }
 
