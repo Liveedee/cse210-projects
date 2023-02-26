@@ -17,7 +17,7 @@ class Program
             Console.WriteLine(breathingActivity1.ShowBreathingMessage());
             Console.WriteLine(activity1.GetUserTime());
             int duration = int.Parse(Console.ReadLine());
-          
+            Console.WriteLine(duration);
         }
 }
 }
