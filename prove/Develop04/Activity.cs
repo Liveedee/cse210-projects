@@ -5,13 +5,27 @@ using System;
     // private string _startMessage;
     // private string _endMessage;
     protected int _duration;
+    protected string _activity;
+    protected string _info;
 
         
 
         
-    public void DurationActivity(int duration)
+    public void ActivityInfo(int duration, string activity, string info)
     {
         _duration = duration;
+        _activity = activity;
+        _info = info;
+    }
+
+    public string NameActivity()
+    {
+        return _activity;
+    }
+
+    public string DescriptionInfo()
+    {
+        return _info;
     }
 
     // public DoAnimation();
@@ -19,9 +33,6 @@ using System;
         
     // }
     
-        // if (choice == 2)
-
-        // }
 
 
     public string GetUserTime()
@@ -31,9 +42,16 @@ using System;
      
     }
 
+    public string DisplayStart()
+    {
+        return $"Welcome to the {_activity} + {_info}";
+    }
+    
+    // public string DisplayEnd()
+    // {
+    //     return 
+    // }
 }
-
-
 
     // public string DisplayEnd()
     // {
