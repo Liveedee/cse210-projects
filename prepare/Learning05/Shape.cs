@@ -1,8 +1,8 @@
 using System;
 
-class Shape
+public abstract class Shape
 {
-    private string _color;
+    public string _color;
 
     public Shape(string color)
     {
@@ -19,7 +19,7 @@ class Shape
     }
 
 
-    public abstract float GetArea();
+    public abstract double GetArea();
 
 
 }
