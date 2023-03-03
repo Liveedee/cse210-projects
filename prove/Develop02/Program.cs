@@ -6,9 +6,20 @@ public class Program
     {
 
     Journal journal = new Journal();
-
-    Entry entry = new Entry();
     
+    
+    PromptGenerator promptGenerator = new PromptGenerator();
+    Console.WriteLine("What would you like to do?");
+    string choice = Console.ReadLine();
+
+    if (choice == "1")
+    {
+                
+        Entry entry = new Entry();
+
+       
+        
+    }    
 
 
     }

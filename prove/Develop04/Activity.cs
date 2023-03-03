@@ -28,11 +28,12 @@ using System;
         return _info;
     }
 
-    public int DoAnimation()
+    public void DoAnimation()
     {
-        for (int i = 10; i > 0; i--)
+        Console.Write("+");
         Thread.Sleep(1000);
         Console.Write("b \b");
+        Console.Write("-");
     }
     
 

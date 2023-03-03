@@ -19,11 +19,11 @@ class Program
             Console.WriteLine(activity1.GetUserTime());
             int duration = int.Parse(Console.ReadLine());
             Console.WriteLine(activity1.DisplayStart());
-            Console.WriteLine(activity1.DoAnimation());
+            Console.Write(activity1.DoAnimation());
         }
         if (userInput == "2")
         {
-            Console.WriteLine(reflecting1.ShowReflectingMessage());
+            // Console.WriteLine(reflecting1.ShowReflectingMessage());
             Console.WriteLine(activity1.GetUserTime());
             int duration = int.Parse(Console.ReadLine());
             Console.WriteLine(activity1.DisplayStart()); 
