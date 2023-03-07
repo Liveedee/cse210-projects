@@ -28,7 +28,7 @@ using System;
         return _info;
     }
 
-    public void DoAnimation()
+    public static void DoAnimation()
     {
         Console.Write("+");
         Thread.Sleep(1000);

@@ -3,11 +3,8 @@ using System;
     public class Entry
     {
 
-    public string _write = "";
-    public string _display ="";
-    public string _load = "";
-    public string _save ="";
-    public string _quit ="";
+    public int choice;
+
     public List<string> _Entries = new List<string>();
 
     public Entry()
@@ -18,14 +15,25 @@ using System;
         _Entries.Add("What was the strongest emotion I felt today?");
         _Entries.Add("If I had one thing I could do over today, what would it be?");
             
-        
-        
-        for (int i = 0; i < _Entries.Count; i++)
-        {         
-            Random randomGenerator = new Random(_Entries);
-            int entryNumber = randomGenerator.Next(_Entries);
-            Console.WriteLine(_Entries[i]);
+    
+    int i = 0;
+    while (choice != 5)
+    {
+        foreach(string entry in _Entries)
+        {
+            Console.WriteLine($"{entry}");
         }
+        int choice = int.Parse(Console.ReadLine());
+        i++;
+        }
+    }
+        
+        // for (int i = 0; i < _Entries.Count; i++)
+        // {         
+        //     Random randomGenerator = new Random(_Entries);
+        //     int entryNumber = randomGenerator.Next(_Entries);
+        //     Console.WriteLine(_Entries[i]);
+        // }
 
 
 }
@@ -35,4 +43,3 @@ using System;
 
     // if (choice == 1);
     //     Console.WriteLine();
-}
