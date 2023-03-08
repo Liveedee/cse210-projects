@@ -3,15 +3,19 @@ using System;
 public class Goal
 {
 
-    private string _name;
-    private string _description;
-    private int _points;
+    // private string _name;
+    // private string _description;
+    // private int _points;
 
-    public string GetName();
+    public Goal()
     {
-        Console.Writeline($"What is the name of your goal?:");
-    }
 
+    }
+    public string GetGoalName()
+    {
+        return $"What is the name of your goal?:";
+    }
+}
     // public void SetName();
     // {
         
