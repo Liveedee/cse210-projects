@@ -4,17 +4,16 @@ using System;
 
 public class SimpleGoal : Goal
 {
-    private string _simpleName = Console.ReadLine();
     
     public string GetName()
     {
-        return _simpleName;
+        return $"What is the name of your goal?:";
     }
 
-    public void SetSimple(string simpleName)
-    {
-        _simpleName = simpleName;
-    }
+    // public void SetSimple(string simpleName)
+    // {
+    //     _simpleName = simpleName;
+    // }
     
 
 }
