@@ -8,12 +8,7 @@ public class Menu
 
 
     public Menu()
-    {    
-        
-        
-        
-        
-
+    {  
         
         _FirstMenu.Add($"{1}. Create New Goal");
         _FirstMenu.Add($"{2}. List Goals");

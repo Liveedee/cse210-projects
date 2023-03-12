@@ -6,28 +6,19 @@ class Program
     {
         Console.WriteLine($"\nMenu Options:\n");
         Menu menu1 = new Menu();
-        
+
         string userInput = Console.ReadLine();
-
-
-
-
         if (userInput == "1")
         { 
-            
-            
             GoalMenu goalmenu1 = new GoalMenu();
-
-        }
-        Console.WriteLine($"What type of goal would you like to create:");
+            Console.WriteLine($"What type of goal would you like to create:"); 
+        
+        
         string goalInput = Console.ReadLine();
-
         if (goalInput == "1")
         {
-            
             Goal goal1 = new Goal();
-            // SIMPLE GOAL
-            Console.WriteLine(goal1.getName());
+            Console.WriteLine("okay");
         }
 
         // if (goalInput == "2");
@@ -50,6 +41,7 @@ class Program
 
 
 
+    }
 }
 
         // Goal goal1 = new Goal();
