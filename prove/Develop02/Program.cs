@@ -21,6 +21,14 @@ public class Program
         string userEntry = Console.ReadLine();
       
 
+        string fileName = "myJournal.txt";
+
+        using (StreamWriter outputFile = new StreamWriter(fileName))
+        {
+       
+            outputFile.WriteLine(userEntry);
+            
+}
        
         
     }    
