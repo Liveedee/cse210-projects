@@ -1,5 +1,5 @@
 using System;
-
+using System.IO;
 public class Program
 {
     static void Main(string[] args)
@@ -14,8 +14,12 @@ public class Program
 
     if (choice == "1")
     {
-                
-        Entry entry = new Entry();
+        Random random = new Random();  
+        Entry entry1 = new Entry();
+        int promptList = random.Next(entry1._Entries.Count);
+        Console.WriteLine(entry1._Entries[promptList]);
+        string userEntry = Console.ReadLine();
+      
 
        
         
