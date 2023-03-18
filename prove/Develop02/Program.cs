@@ -11,7 +11,9 @@ public class Program
             PromptGenerator promptGenerator = new PromptGenerator();
             Console.WriteLine("What would you like to do?");
             string choice = Console.ReadLine();
-           
+            DateTime theCurrentTime = DateTime.Now;
+            string dateText = theCurrentTime.ToShortDateString();
+
             if (choice == "1")
             {
                 Random random = new Random();  
@@ -19,12 +21,14 @@ public class Program
                 int promptList = random.Next(entry1._Entries.Count);
                 Console.WriteLine(entry1._Entries[promptList]);
                 string userEntry = Console.ReadLine();
-            
+                
+
 
                 string fileName = "myJournal.txt";
 
                 using (StreamWriter outputFile = new StreamWriter(fileName))
                 {
+                    outputFile.WriteLine(dateText);
                     outputFile.WriteLine(entry1._Entries[promptList]);
                     outputFile.WriteLine(userEntry);
                 }
@@ -33,6 +37,7 @@ public class Program
             {
                 string filename = "myJournal.txt";
                 string[] lines = System.IO.File.ReadAllLines(filename);
+           
                 Console.WriteLine("Prompt:");
                 foreach (string line in lines)
                 {
@@ -41,6 +46,8 @@ public class Program
 
                   
                     {
+                        
+                        
                         Console.WriteLine($"{readPrompt}");
                     }
         }
