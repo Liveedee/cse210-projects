@@ -2,9 +2,12 @@ using System;
 using System.IO;
 public class Program
 {
+    
+
+
     static void Main(string[] args)
     {
-    
+        
         for (int i = 0; i < 20; i++)
         {
             Journal journal = new Journal();
@@ -16,22 +19,30 @@ public class Program
 
             if (choice == "1")
             {
+                
                 Random random = new Random();  
                 Entry entry1 = new Entry();
                 int promptList = random.Next(entry1._Entries.Count);
                 Console.WriteLine(entry1._Entries[promptList]);
+                
                 string userEntry = Console.ReadLine();
                 
+            
 
+            string fileName = "myJournal.txt";
 
-                string fileName = "myJournal.txt";
+        
 
-                using (StreamWriter outputFile = new StreamWriter(fileName))
-                {
-                    outputFile.WriteLine(dateText);
-                    outputFile.WriteLine(entry1._Entries[promptList]);
-                    outputFile.WriteLine(userEntry);
-                }
+            using (StreamWriter outputFile = new StreamWriter(fileName))
+            {
+              
+                outputFile.WriteLine(dateText);
+                outputFile.WriteLine(entry1._Entries[promptList]);
+                outputFile.WriteLine(userEntry);
+
+            }
+                
+            
             }
             else if (choice == "2")
             {
@@ -41,7 +52,7 @@ public class Program
                 Console.WriteLine("Prompt:");
                 foreach (string line in lines)
                 {
-                    string[] parts = line.Split(",");
+                    string[] parts = line.Split("");
                     string readPrompt = parts[0];
 
                   
@@ -59,4 +70,3 @@ public class Program
 
 
             }
-        
