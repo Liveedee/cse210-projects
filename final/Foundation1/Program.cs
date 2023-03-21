@@ -28,7 +28,7 @@ class Program
 
         Comment comment2video = new Comment();
         comment2video._comment = "Awful Video!";
-        comment2video._comment = "Mopey Longbottoms";
+        comment2video._commenter = "Mopey Longbottoms";
         comment2video._commentAmount = 0;
 
         video1.DisplayAll();
