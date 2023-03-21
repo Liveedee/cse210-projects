@@ -3,9 +3,9 @@ using System;
 public class Video
 {
 
-    private string _title = "";
-    private string _author = "";
-    private int _length = 0;
+    public string _title = "";
+    public string _author = "";
+    public int _length = 0;
 
     public void DisplayAll()
     {
