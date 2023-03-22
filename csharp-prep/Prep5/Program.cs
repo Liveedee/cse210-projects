@@ -36,4 +36,6 @@ class Program
         {
             Console.WriteLine($"{name}, the square answer of the number you entered is: {square}");
         }
+
+        
     }
