@@ -58,6 +58,6 @@ class Program
         Console.WriteLine($"The largest number is: {largest}");
     
         double average = ((double)sum) / numbers.Count;
-        Console.WriteLine($"The average is: {average}");
+        Console.WriteLine($"The average is:  {average}");
 }
 }
