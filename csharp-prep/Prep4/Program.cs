@@ -6,11 +6,11 @@ class Program
     {   
         List<int> numbers = new List<int>();
 
-        
+        Console.WriteLine("Enter a list of numbers, type 0 when finished");
         int entry = -1;
         while (entry != 0)
         {   
-            Console.WriteLine("Enter a list of numbers, type 0 when finished");
+            
         
             string addNumber = Console.ReadLine();
             entry = int.Parse(addNumber);
@@ -19,6 +19,7 @@ class Program
             {
                 numbers.Add(entry);
             }
+        }
 
         int sum = 0;
         foreach(int number in numbers)
@@ -28,7 +29,18 @@ class Program
         
         Console.WriteLine($"The sum is {sum}");
     
+        int smallest = numbers[0];
+        foreach(int number in numbers)
+        {
+            if (number < smallest)
+            {
+                smallest = number;
+            }
         }
+        
+        Console.WriteLine($"The smallest number is: {smallest}");
+    
+        
 
              
 
@@ -45,5 +57,5 @@ class Program
         
         Console.WriteLine($"The largest number is: {largest}");
     }
-        
+        double average = ((double)sum) / numbers.Count
 }
